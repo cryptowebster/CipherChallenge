@@ -8,8 +8,6 @@ Don't paste any ciphers into this file, ciphers are for main.py
 import numpy as np
 
 
-
-
 class Cipher:
     '''
     Represents the object of the cipher we need to decode
@@ -38,7 +36,7 @@ class Cipher:
     def decipher(self):
         '''
         deciphers it into english depending on which cipher it is.
-        Use the method for solving ciphers to do this (e.g. solve_caesar)
+        Use the methods for solving ciphers to do this (e.g. solve_caesar)
         '''
         pass
 
@@ -48,6 +46,20 @@ class Cipher:
 
     
     def solve_vigenere(self):
+        pass
+
+
+    def col_tranps(self):
+        '''
+        for decoding columnar transposition
+        '''
+        pass
+
+
+    def decode_enigma(self):
+        '''
+        I don't know if enigma is one of the ciphers, I'll just put it here anyway
+        '''
         pass
 
 
