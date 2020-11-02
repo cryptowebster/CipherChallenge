@@ -1,3 +1,15 @@
+'''
+Cipher object class
+
+Don't paste any ciphers into this file, ciphers are for main.py
+'''
+
+
+import numpy as np
+
+
+
+
 class Cipher:
     '''
     Represents the object of the cipher we need to decode
@@ -7,7 +19,7 @@ class Cipher:
     def __init__(self, text):
 
         
-        self.raw_text = text
+        self.raw_text = text # TODO: convert this to np.array
 
 
 
@@ -15,9 +27,8 @@ class Cipher:
 
 
     def find_cipher(self):
-        cipher_name = None  # TODO: write up the algorithm to find 
-                            # which cipher it is
-
+        # TODO: write up the algorithm to find which cipher it is
+        cipher_name = None
         
 
         return cipher_name
