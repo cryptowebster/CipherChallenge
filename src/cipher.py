@@ -1,10 +1,3 @@
-'''
-Cipher object class
-
-Don't paste any ciphers into this file, ciphers are for main.py
-'''
-
-
 import numpy as np
 
 
@@ -15,6 +8,13 @@ class Cipher:
 
 
     def __init__(self, text):
+        '''
+        Initialises the Cipher object
+
+        :param text: The raw, undeciphered input text
+
+        :return None
+        '''
 
         
         self.raw_text = text # TODO: convert this to np.array
@@ -24,29 +24,36 @@ class Cipher:
         self.cipher = self.find_cipher()
 
 
-    def find_cipher(self):
+    def get_cipher(self):
+        '''
+        Gets the ioc value for the cipher
+
+        :return cipher_name: The name of the cipher 
+        '''
+
         # TODO: write up the algorithm to find which cipher it is
-        cipher_name = None
         
 
-        return cipher_name
+        # return cipher_name
 
 
 
     def decipher(self):
         '''
-        deciphers it into english depending on which cipher it is.
-        Use the methods for solving ciphers to do this (e.g. solve_caesar)
+        Converts the cipher text to english
+
+        :return result: the english text
         '''
-        pass
+        # return result
 
 
     def solve_caesar(self):
-        pass
 
+        # return result
+        
     
     def solve_vigenere(self):
-        pass
+        # return result
 
 
     def col_tranps(self):
